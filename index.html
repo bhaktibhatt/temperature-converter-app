@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Tempurature Converter App</title>
+</head>
+<body>
+    <div class="container">
+        <form>
+            <div class="title">TEMPURATURE CONVERTER</div>
+            <div class="input-drop pad-10">
+                <div class="input-temp pad-10">
+                    <span class="label-temp pad-10">Degrees:</span>
+                    <input id="temperatureVal" type="number" step="any" name="temp" required>
+                </div>
+                <div class="dropdown pad-10">
+                    <select name="tempUnit" id="tempUnit">
+                        <option value="Farenheit">Faranheit</option>
+                        <option value="Celcius">Celcius</option> 
+                        <option value="Kelvin">Kelvin</option>
+                    </select>
+                </div>
+            </div>
+            <div class="result" id="degResult"></div>
+            <div class="btn">    
+                <button type="button" onclick="Celcius()">Convert</button>
+            </div>
+        </form>
+    </div>
+    <script type="text/javascript" src="index.js"></script>
+</body>
+</html>
