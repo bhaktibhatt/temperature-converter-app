@@ -119,5 +119,7 @@ button:hover{
         font-size: 20px;
         width:20vw;
         height: 3vh;
+        padding: 20px;
+        padding:10px 10px 20px 10px;
     }
 }
