@@ -5,6 +5,7 @@
     padding: 0;
     font-family: 'M PLUS 1';
     box-sizing: border-box;
+    font-size: 24px;
 }
 body{
     background-image: url('./layered-waves-desktop.svg');
@@ -13,19 +14,24 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: #ffe15d;
 }
 .container{
-    background-color: white;
-    aspect-ratio: 900/300;
+    background-color: #EFF7E1;
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 20px;
+    padding: 15px;
     margin-top: 150px;
     height:60vh;
     width:50vw;
     border: 2px solid #767676;
     border-radius:20px;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 .title{
     display: flex;
@@ -37,18 +43,39 @@ body{
 .input-drop{
     display: flex;
     margin: 5px;
+    align-items: center;
 }
 input{
+    all:unset;
     width:150px;
+    height: 70%;
+    background-color: white;
+    border: 1.5px solid #000;
 }
 .pad-10{
     padding:10px;
 }
+select{
+    margin-left: 20px;
+    font-size: 20px;
+    border:0.5px solid #000;
+    height: 45px;
+    padding: 0 20px 0 10px;
+    background-color:white ;
+}
+select:hover,
+select:focus {
+  border-color: #DCDCDC;
+}
+
+option{
+    font-size: 20px;
+}
 .result{
-    margin-left: 96px;
-    padding-bottom: 25px;
+    background-color: white;
     width: 30vmin;
-    height: 3vh;
+    height:30px;
+    padding-bottom:30px;
     border: 1.5px solid #1c1c1c;
 }
 
@@ -57,24 +84,40 @@ input{
     justify-content: center;
     margin-top:10px;
 }
+button{
+    all:unset;
+    background-color:#fff;
+    padding:10px 20px;
+    margin: 5px;
+    border: 1px solid #000;
+    border-radius: 20px;
+}
+button:hover{
+    background-color: #59c1bd;
+}
 @media screen and (max-width:600px){
-    body{
-        background-color: #ffe15d;
-    }
     .container{
         height:400px;
-        width: 300px;
+        width: 90vw;
     }
     .title{
         font-size: 1.2em;
     }
     select{
-        margin-top:23px;
+        margin-top:35px;
         border: 1.5px solid #767676;
         padding: 1px;
         border-radius: 4px;
     }
     .result{
-        margin-left:95px;
+        width:40vmin;
+        height: 40px;
+    padding-bottom:20px;
+
+    }
+    button{
+        font-size: 20px;
+        width:20vw;
+        height: 3vh;
     }
 }

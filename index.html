@@ -12,21 +12,20 @@
         <form>
             <div class="title">TEMPURATURE CONVERTER</div>
             <div class="input-drop pad-10">
-                <div class="input-temp pad-10">
-                    <span class="label-temp pad-10">Degrees:</span>
-                    <input id="temperatureVal" type="number" step="any" name="temp" required>
+                <div>
+                    <span>Degrees:</span>
+                    <input id="temperatureVal" type="number" step="any" name="temp" required/>
                 </div>
-                <div class="dropdown pad-10">
-                    <select name="tempUnit" id="tempUnit">
-                        <option value="Farenheit">Faranheit</option>
-                        <option value="Celcius">Celcius</option> 
-                        <option value="Kelvin">Kelvin</option>
+                <div>
+                    <select  name="tempUnit" id="tempUnit">
+                        <option value="1">Faranheit</option>
+                        <option value="2">Celcius</option> 
                     </select>
                 </div>
             </div>
-            <div class="result" id="degResult"></div>
+            <div class="result" id="degResult" step="0.01"></div>
             <div class="btn">    
-                <button type="button" onclick="Celcius()">Convert</button>
+                <button type="button" onclick="ConvertTemp()">Convert</button>
             </div>
         </form>
     </div>
